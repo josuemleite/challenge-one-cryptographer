@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <link rel="shortcut icon" href="./assets/shield_favicon.ico" type="image/x-icon">
+
+    <title>Criptógrafo</title>
+</head>
+<body>
+    <main>
+        <div class="alura__logo">
+            <a href="./"><img src="./assets/alura_logo.png" alt="Logo da Alura"></a>
+        </div>
+        <div class="content">
+            <div class="input">
+                <textarea name="text__input" id="text__input" spellcheck="false" placeholder="Digite seu texto"></textarea>
+                <p class="information">
+                    <img src="./assets/information_icon.png"> Apenas letras minúsculas e sem acento.
+                </p>
+                <div class="buttons">
+                    <button type="button" id="encrypt__button" onclick="encrypt()">Criptografar</button>
+                    <button type="button" id="decrypt__button" onclick="decrypt()">Descriptografar</button>
+                </div>
+            </div>
+            <div id="output">
+                <img id="not__found" src="./assets/not_found.png" alt="Imagem de erro: não encontrado">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
